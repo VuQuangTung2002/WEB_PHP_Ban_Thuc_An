@@ -1,0 +1,250 @@
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: transparent;
+}
+ul#cssmenu {
+    background: #fff;
+    padding: 10px;
+}
+#cssmenu>li{
+    border-bottom: 1px dashed #c9c9c9;
+}
+ul#cssmenu  li  a{
+    color:#555555;
+    font-size: 18px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+#cssmenu > li.item>ul >li> a {
+    margin-left: 0;
+    padding-left: 30px;
+    border-top: 1px dashed #c9c9c9;
+}
+#cssmenu > li.item>ul >li .lve2 li a  {
+    padding-left:40px;
+}
+#cssmenu ul li a {
+    padding-left: 50px;
+    border-top: 1px dashed #c9c9c9;
+}
+#cssmenu>li:last-child {
+    border-bottom:0;
+}
+#cssmenu li a:before {
+    position: absolute;
+    left:0;
+    top:15px;
+    content: "";
+    font-family: "FontAwesome";
+    color: #e76d66;
+    width: 15px;
+    font-size: 10px;
+    margin-right: 10px;
+    font-weight: normal;
+    font-style: normal;
+    color: #777;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+#cssmenu > li:hover > a{
+    /*padding-left:20px;*/
+    color:#97c505
+}
+
+#cssmenu li:hover > a:before {
+    opacity: 1;
+    visibility: visible;
+    color:#97c505;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#cssmenu > li.item>ul >li> a:before {
+    left:15px;
+}
+#cssmenu > li.item>ul >li:hover > a {
+    padding-left:35px;
+    color:#97c505
+}
+#cssmenu > li.item>ul >li .lve2 li a:before {
+    left:30px;
+}
+#cssmenu > li.item>ul >li .lve2 li:hover > a {
+    padding-left:50px;
+    color:#97c505
+}
+span.sign {
+    right: 0;
+    position: absolute;
+    padding-right: 10px;
+}
+.menu-left-title{
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background:#444444;
+    padding: 20px 0;
+    color: #fff;
+    border-left: 5px solid #60a703;
+}
+
+.sidebar_vendors .widget_content {
+    background: #fff;
+    padding: 10px;
+}
+.sidebar_vendors .widget_content {
+    background: #fff;
+    padding: 10px;
+}
+.sidebar_vendors .widget_content ul li a{
+    color:#555555;
+    font-size: 18px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    padding: 10px 15px;
+    display: block;
+}
+.sidebar_vendors .widget_content ul li {
+    border-bottom: 1px dashed #c9c9c9;
+    position: relative;
+}
+.sidebar_vendors .widget_content ul li:last-child{
+    border:0;
+}
+.sidebar_vendors .widget_content ul li a:before {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    content: "";
+    font-family: "FontAwesome";
+    color: #e76d66;
+    width: 15px;
+    font-size: 10px;
+    margin-right: 10px;
+    font-weight: normal;
+    font-style: normal;
+    color: #777;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+.sidebar_vendors .widget_content ul li:hover a {
+    padding-left: 20px;
+    color:#97c505;
+}
+.sidebar_vendors .widget_content ul li:hover > a:before {
+    opacity: 1;
+    visibility: visible;
+    color:#97c505;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.widget.widget_product_price_slide {
+    background: #fff;
+    padding: 10px;
+    padding-top: 35px;
+}
+/* ui slider*/
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+#slider-container{
+    margin:0 auto;
+    width: 90%;
+}
+#slider-container {
+    height: 6px;
+    background: #cbcbcb;
+    color: #222222;
+    border-radius: 0;
+}
+.widget_product_price_slide input {
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0;
+    display: inline-block;
+    width: 100%;
+    opacity: 0.9!important;
+    background: transparent;
+    border: 0;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+.ui-slider-range.ui-widget-header.ui-corner-all {
+    top: 0;
+    background:#333333;
+    height: 100%;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    position: absolute;
+    z-index: 2;
+    border-radius:0px;
+    cursor: pointer;
+    background:#ff6517;
+    width: 12px;
+    height: 15px;
+}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+    filter: inherit;
+}
+.ui-slider-horizontal {
+    height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.3em;
+    margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+.ui-slider-vertical {
+    width: .8em;
+    height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+    left: -.3em;
+    margin-left: 0;
+    margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+    left: 0;
+    width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+    bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+    top: 0;
+}
+
+

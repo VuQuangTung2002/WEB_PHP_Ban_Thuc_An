@@ -1,0 +1,138 @@
+#contactFormWrapper small {
+	color:#cCC;
+	font-size:85%;
+	right:0;
+}
+
+#contactFormWrapper{padding-left:15px;}
+.col-md-7#col-left{padding-left:0px;}
+.col-md-5#col-right{padding-right:0px;}
+
+
+#col-left h3
+{
+  padding-left:15px;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+#contact hr.line-left, #contact hr.line-right
+{
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #ddd;
+  margin-top: 0px;
+}
+
+.contact-form small{color: #B5B5B5;}
+.contact-form .form-control
+{
+color: #000;
+border-color: #D9D9D9;
+}
+
+.contact-form .input-lg, .contact-form .form-group-lg .form-control
+{
+height: 43px;
+padding: 8px 16px;
+font-size: 14px;
+line-height: 17px;
+border-radius: 4px;
+}
+.content-contact h3{
+font-size: 22px;
+}
+.contact-form .btn-lg, .contact-form .btn-group-lg>.btn
+{
+padding: 10px 32px;
+font-size: 16px;
+border-radius: 5px;
+margin-bottom: 35px;
+}
+@media (min-width:960px) {
+.dropdown-menu .has-submenu{  
+  margin-right: 20px !important;
+  white-space: nowrap !important;
+}
+}
+@media (max-width:991px) {
+.product-list .col-xs-6:nth-child(2n+1) { clear: both;}
+.article-content *{
+max-width:100% !important;
+}
+.article-content table{
+width: 100% !important;
+}
+#article .comment_form .text{
+max-width:100%;
+}
+.content-page>div{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+}
+@media (max-width:768px) {
+#cartformpage,#cartform .modal-body{
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+.item-delete a{
+position:static;
+}
+#cartformpage table, #cartform table {
+  overflow: visible;
+  white-space: nowrap!important;
+}
+
+.content-product-list .product-list{
+padding:0;
+}
+.content-product-list .pro-loop{
+padding:5px;
+}
+.content-product-list .product-block{
+margin-bottom:5px !important;
+}
+#content{
+padding:0;
+}
+.modal-header h4{
+width:90%;
+}
+.navbar-main.navbar{
+  position: fixed !important;
+width:100%;
+z-index:9;
+top:0;
+}
+.wrapper header.container{
+margin-top:40px;
+}
+.search-bar form input{
+width:250px !important;
+}
+}
+.news-latest .article .col-ld-3 a {
+  white-space: normal;
+}
+#cart .item,#cartform table .item-title{
+max-width:200px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+white-space: nowrap;
+}
+@media (min-width:960px) {
+.slide-nav{
+display:none;
+}
+.news-latest .article img{
+width:50px;
+}
+.img-article img{
+height:auto;
+max-width:100% !important;
+}
+}

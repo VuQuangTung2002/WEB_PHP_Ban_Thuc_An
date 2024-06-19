@@ -1,0 +1,45 @@
+#. htaccess nằm cùng cấp với file index.php gốc của ứng dụng
+# File này thường dùng cho việc viết lại url (rewrite) dạng url thân thiện
+# FIle này là 1 file rất nhạy cảm, chỉ thừa thiếu 1 ký tự là sẽ chết trang
+# Cần chứ ý khi chỉnh sửa file này
+# thường sẽ nhớ máy móc chứ k nên học kĩ về cú pháp của file này
+# KHai báo cho phép sử dụng rewrite url trên hệ thống
+RewriteEngine On
+
+# VIết rewrite cho trang chi tiết sản phẩm cần xác định các giá trị động cần dùng để biểu thức regex tương ứng
+# .* -> đại diện cho ký tự bất kỳ, xuất hiện ít nhất 1 lần trở lên
+# [0-9]{1,}: chỉ các kí tự số xuất hiện ít nhất 1 lần
+# có thể dùng regex để bắt validate luôn cho các tham số mà k cần bắt trực tiếp trong code PHP
+# Cú pháp: RewriteRule <link giả> <link mvc thật>
+# trong link giả có bao nhiêu chuỗi regex thì trong link thật sẽ sử dụng ký tự $<vị-trí-regex-của-link-giả> để đón lấy giá trị tương ứng
+RewriteRule chi-tiet-san-pham/(.*)/([0-9]{1,}) index.php?controller=product&action=detail&slug=$1&id=$2
+#rule cho trang danh sách sản phẩm
+RewriteRule danh-sach-san-pham index.php?controller=product&action=showAll
+#rule cho trang thêm vào giỏ hàng
+RewriteRule them-vao-gio-hang/([0-9]{1,}) index.php?controller=cart&action=add&id=$1
+#rule cho trang giỏ hàng của bạn
+RewriteRule gio-hang-cua-ban index.php?controller=cart&action=index
+#rule cho trang xoá sản phẩm trong giỏ hàng
+RewriteRule xoa-san-pham/([0-9]{1,}) index.php?controller=cart&action=delete&id=$1
+#rule cho trang thanh toán
+RewriteRule thanh-toan index.php?controller=payment&action=index
+#rule cho trang cảm ơn đã đặt hàng
+RewriteRule cam-on index.php?controller=payment&action=thank
+#rule cho thanh toán online
+RewriteRule thanh-toan-truc-tiep index.php?controller=payment&action=online
+#rule cho trang giới thiệu
+RewriteRule gioi-thieu index.php?controller=introduce&action=index
+#rule cho trang tin tức
+RewriteRule tin-tuc index.php?controller=new&action=index
+#rule cho trang chi tiết tin tức
+RewriteRule chi-tiet-tin-tuc/(.*)/([0-9]{1,}) index.php?controller=new&action=detail&slug=$1&id=$2
+#rule cho trang liên hệ
+RewriteRule lien-he index.php?controller=contact&action=index
+#rule cho đăng nhập
+RewriteRule dang-nhap index.php?controller=login&action=login
+#rule cho đăng ký
+RewriteRule dang-ky index.php?controller=login&action=signup
+#rule cho đăng xuất
+RewriteRule dang-xuat index.php?controller=login&action=logout
+#rule cho trang thanh toan online
+RewriteRule thanh-toan-truc-tuyen index.php?controller=payment&action=online
